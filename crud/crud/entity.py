@@ -1,12 +1,12 @@
 class Produto():
     def __init__(self):
-        self.__ = None
+        self.__id = None
         self.__nome = None
         self.__descricao = None
 
     @property
     def id(self):
-       return id.__nome
+       return self.__id
 
     @id.setter
     def id(self,id):
