@@ -3,6 +3,8 @@ class Produto():
         self.__id = None
         self.__nome = None
         self.__descricao = None
+        self.__valor = None
+        self.__qtd_estoque = None
 
     @property
     def id(self):
@@ -26,3 +28,20 @@ class Produto():
     @descricao.setter
     def descricao(self, descricao):
         self.__descricao = descricao
+
+
+    @property
+    def valor(self):
+       return self.__valor
+
+    @valor.setter
+    def valor(self, valor:float):
+        self.__valor = valor
+
+    @property
+    def estoque(self):
+       return self.__qtd_estoque
+
+    @estoque.setter
+    def estoque(self, estoque:int):
+        self.__qtd_estoque = estoque

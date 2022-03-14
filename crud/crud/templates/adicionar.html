@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form action="/adicionar/" method="POST">
+         {% csrf_token %}
+        <label for="name">Nome:</label><br>
+        <input type="text" required id="name" name="name"><br><br>
+
+        <label for= "descricao">Descrição:</label><br>
+        <input type="text" required id="descricao_id" name="descricao"><br><br>
+
+        <label for= "valor">Valor:</label><br>
+        <input type="number"step="0.01" required id="valor_id" name="valor"><br><br>
+
+        <label for= "estoque">Quantida Estoque:</label><br>
+        <input type="number"required id="estoque_id" name="estoque"><br><br>
+
+
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+</body>
+</html>

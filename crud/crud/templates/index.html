@@ -5,9 +5,19 @@
     <title>CRUD</title>
 </head>
 <body>
+    
+    
     {%for produto in produtos%}
-        <h1>{{produto.nome}}</h1>
+        <div>
+            <h1> <a href="/produto/{{produto.id}}"> {{produto.nome}}</a></h1>
+            <p>{{produto.valor}}</p>
+            <a href="/delete/{{produto.id}}">Deletar Produto</a>
+
+        </div>
     {%endfor%}
+    <br>
+    <br>
+    <a href="/adicionar">Adicionar Novo Produto</a>
 
 </body>
 </html>
